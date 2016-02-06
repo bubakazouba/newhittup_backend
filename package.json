@@ -1,0 +1,22 @@
+{
+  "name": "Hittup_Backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "apn": "^1.7.5",
+    "body-parser": "~1.13.2",
+    "easyimage": "^2.1.0",
+    "express": "~4.13.1",
+    "forever": "^0.15.1",
+    "mongodb": "^2.0.42",
+    "mongoose": "~4.2.9",
+    "winston": "^2.1.1",
+    "winston-papertrail": "^1.0.2"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1"
+  }
+}
