@@ -46,7 +46,7 @@ timeInterval's first element is time before hittup starts, second element is tim
 ```
 { 
     "timeInterval": [<seconds>,<seconds>],
-    "maxDistance": <Number> , //in kilometers
+    "maxDistance": <Number> , //in meters
     "coordinates": [<long>, <lat>],
 }
 ```
@@ -247,7 +247,7 @@ timeInterval's first element is time before hittup starts, second element is tim
 ```
 { 
     "timeInterval": [<seconds>,<seconds>],
-    "maxDistance": <Number> , //in kilometers
+    "maxDistance": <Number> , //in meters
     "coordinates": [<long>, <lat>],
 }
 ```
@@ -264,7 +264,7 @@ timeInterval's first element is time before hittup starts, second element is tim
 ```
 { 
     "timeInterval": [<seconds>,<seconds>],
-    "maxDistance": <Number> , //in kilometers
+    "maxDistance": <Number> , //in meters
     "coordinates": [<long>, <lat>],
 }
 ```
@@ -360,7 +360,8 @@ POST format:
     "uid": "<useruid>",
     "ownerName": "<string>",
     "usersInviteduids": ["<uid>","<uid>",...],
-    "image": "<base64encodedstring>"
+    "image": "<base64encodedstring>",
+    "emoji": <String>
 }
 ```
 format of the image doesn't matter
@@ -388,7 +389,8 @@ or
     "isPrivate": <boolean>,
     "uid": "<EventOrganizeruid>",
     "dateStarts": <seconds>,
-    "image": "<base64encodedstring>"
+    "image": "<base64encodedstring>",
+    "emoji": <String>
 }
 ```
 format of the image doesn't matter

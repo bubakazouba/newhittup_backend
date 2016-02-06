@@ -399,7 +399,7 @@ function getImageurls(imageData, callback){
 }
 
 function postFriendHittup(req, callback) {
-    if(!Helpers.check(["ownerName","uid","title","isPrivate","duration","coordinates","image"], req))
+    if(!Helpers.check(["ownerName","uid","title","isPrivate","duration","coordinates","image","emoji"], req))
         return;
 
     if(!mongodb.db) {return callback({"success": "false", "error": "DB not connected"});}
@@ -413,6 +413,7 @@ function postFriendHittup(req, callback) {
             title: body.title,
             isPrivate: body.isPrivate,
             duration: body.duration,
+            emoji: body.emoji,
             images : [{
                 lowQualityImageurl: LQImageurl,
                 highQualityImageurl: HQImageurl
@@ -450,7 +451,7 @@ function postFriendHittup(req, callback) {
 
 
 function postEventHittup(req, callback) {
-    if(!Helpers.check(["uid","title","duration","coordinates","image"], req))
+    if(!Helpers.check(["uid","title","duration","coordinates","image","emoji"], req))
         return;
 
     if(!mongodb.db) {return callback({"success": "false", "error": "DB not connected"});}
