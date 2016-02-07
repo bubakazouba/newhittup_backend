@@ -3,6 +3,7 @@ var Schema  = mongoose.Schema;
 
 var UserSchema   = new Schema({
     fbid: String,
+    name: String,
     firstName: String,
     lastName: String,
     fbToken: String,

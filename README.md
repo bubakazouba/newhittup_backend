@@ -507,47 +507,17 @@ deviceToken is optional
 
 ```
 {
-    "fbid": "<fbid>",
-    "fbToken": "<fbToken>",
-    "deviceToken": "<deviceToken"
+    "name": "<fbid>",
+    "deviceToken": "<deviceToken>"
 }
 ```
 
 ### Response format:
 
-if user doesn't exist:
-
 ```
 {
-    "userStatus": "new",
     "uid": "<uid>",
-    "fb_friends": [ ... ] (same as below)
-}
-```
-
-if user already exists:
-
-```
-{
-    "userStatus": "returning",
-    "uid": "<uid>",
-    "fb_friends":
-    [ 
-        {
-            "firstName":"<firstname>",
-            "lastName": "<lastname>",
-            "_id": "<uid>",
-            "fbid": fbid,
-            "loc":{
-                "type":"Point",
-                "state":"<state>",
-                "city":"<city>",
-                "coordinates":[<long>,<lat>],
-                "lastUpdatedTime": <int>
-            }
-        },
-     ...
-    ]
+	"name": "<name>"
 }
 ```
 
